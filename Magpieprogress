@@ -51,7 +51,12 @@ public class Magpie2
         {
             response = "Tell me more about your pets.";
         }
-        else {
+        else if (statement.indexOf("Mr. Jaffe") >= 0)
+        {
+            response = "He sounds like an excellent teacher!";
+        }
+        else 
+        {
         response = getRandomResponse();
         }
         return response;
